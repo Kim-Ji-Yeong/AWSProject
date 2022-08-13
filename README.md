@@ -1,6 +1,6 @@
 # REST-API-CRUD
 
-REST-API 계시판을 만들어보았다.
+REST-API ,
 JPA Auditing으로 생성시간/수정시간 자동화까지 사용해보았다.
 
 ![1](https://user-images.githubusercontent.com/81270199/184503385-ae033636-c27e-4030-9868-3d2642b07a87.PNG)
