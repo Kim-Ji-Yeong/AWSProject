@@ -1,4 +1,5 @@
 package com.example.project.awsproject.domain.posts;
+import com.example.project.awsproject.domain.BaseTimeEntity;
 import lombok.Builder;
 import lombok.Getter;
 import lombok.NoArgsConstructor;
@@ -8,7 +9,7 @@ import javax.persistence.*;
 @Getter
 @NoArgsConstructor
 @Entity
-public class Posts extends BaseTimeEntity{
+public class Posts extends BaseTimeEntity {
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     private Long id;
@@ -19,6 +20,7 @@ public class Posts extends BaseTimeEntity{
     @Column(columnDefinition = "TEXT",nullable = false)
     private String content;
 
+    @Column
     private String author;
 
     @Builder

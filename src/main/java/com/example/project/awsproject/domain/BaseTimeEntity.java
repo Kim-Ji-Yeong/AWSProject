@@ -1,4 +1,4 @@
-package com.example.project.awsproject.domain.posts;
+package com.example.project.awsproject.domain;
 
 import lombok.Getter;
 import org.springframework.data.annotation.CreatedDate;
@@ -12,7 +12,7 @@ import java.time.LocalDateTime;
 @Getter
 @MappedSuperclass
 @EntityListeners(AuditingEntityListener.class)
-public class BaseTimeEntity {
+public abstract class BaseTimeEntity {
 
     @CreatedDate
     private LocalDateTime createdDate;
